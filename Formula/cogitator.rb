@@ -5,21 +5,21 @@
 class Cogitator < Formula
   desc "Monitor local opencode instances from a single TUI"
   homepage "https://github.com/guilhermehto/cogitator"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/guilhermehto/cogitator/releases/download/v0.1.1/cogitator_0.1.1_darwin_amd64.tar.gz"
-      sha256 "bb3a2fc78cb7467e18d35ce17b1f7e1078021e94cd6da76d47a65c7491a9e758"
+      url "https://github.com/guilhermehto/cogitator/releases/download/v0.2.0/cogitator_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7b37dcdfd279d4e7ca0824e3669b3906561e305d3ccbc8702174de9894ed9ecb"
 
       define_method(:install) do
         bin.install "cogitator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/guilhermehto/cogitator/releases/download/v0.1.1/cogitator_0.1.1_darwin_arm64.tar.gz"
-      sha256 "c3979cac5e6afdb2484c6e478219b828211385e6c56b57a4fcefbc103344f9dc"
+      url "https://github.com/guilhermehto/cogitator/releases/download/v0.2.0/cogitator_0.2.0_darwin_arm64.tar.gz"
+      sha256 "1cebbe8a6391ea90d98dd9f749fb3ca8cf84386a83c7989d0bf9ddb468c7345e"
 
       define_method(:install) do
         bin.install "cogitator"
@@ -29,15 +29,15 @@ class Cogitator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/guilhermehto/cogitator/releases/download/v0.1.1/cogitator_0.1.1_linux_amd64.tar.gz"
-      sha256 "26e915f027e66e65a5ff649cf32e118b3c8fdd4cf599c8caade276a6f710cbee"
+      url "https://github.com/guilhermehto/cogitator/releases/download/v0.2.0/cogitator_0.2.0_linux_amd64.tar.gz"
+      sha256 "80701938d05028132d97c1968d5b1df450d179c38ce46d4b5d64b0af64e72f5e"
       define_method(:install) do
         bin.install "cogitator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/guilhermehto/cogitator/releases/download/v0.1.1/cogitator_0.1.1_linux_arm64.tar.gz"
-      sha256 "c2834df5679a548c41b83d71e75490c7e8fffed7fbc5d4e5b7d25933de7b7b2e"
+      url "https://github.com/guilhermehto/cogitator/releases/download/v0.2.0/cogitator_0.2.0_linux_arm64.tar.gz"
+      sha256 "8f5d92e23a6ab914a4e27dd7999e33ba075f1ceff04a6ff4cb3682a8a0e49cb2"
       define_method(:install) do
         bin.install "cogitator"
       end
